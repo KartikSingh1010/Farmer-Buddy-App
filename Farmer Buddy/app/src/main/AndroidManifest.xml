@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.farmersapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FarmersApp.action">
+        <activity
+            android:name=".dashboard.WeatherInfo"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.SoilMoisture"
+            android:exported="false"
+            android:label="@string/title_activity_soil_moisture"
+            android:theme="@style/Theme.FarmersApp.action.NoActionBar" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.AboutCrop"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.CropPrediction"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FarmersApp" />
+        <activity
+            android:name=".dashboard.ChatBot"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.GovernmentSchemas"
+            android:exported="false"
+            android:theme="@style/Theme.FarmersApp.action" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FarmersApp.action" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FarmersApp" />
+        <activity
+            android:name=".OpenScreen"
+            android:exported="true"
+            android:theme="@style/Theme.FarmersApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
